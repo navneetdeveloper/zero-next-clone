@@ -1,0 +1,741 @@
+.ContainerPadding {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+/* Header */
+.NavBar {
+  background: linear-gradient(0deg, #1a1a1a00, #1a1a1a60, #0a0a0a75, #0a0a0a);
+  height: 93px;
+  position: relative;
+  padding-top: 45px;
+  z-index: 999;
+  width: 100%;
+}
+.NavBar :global .nav-link {
+  color: var(--text-color-white) !important;
+  font-size: 20px;
+}
+.NavBar :global .nav-link:hover {
+  color: var(--text-color-yellow) !important;
+}
+.NavBar :global .dropdown-toggle::after {
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  transform: rotate(0deg);
+  vertical-align: 0.02em;
+  border-top: 0.4em solid;
+  border-right: 0.2em solid transparent;
+  border-left: 0.2em solid transparent;
+}
+.HeadLink {
+  margin-left: 20px;
+}
+.NavBar :global .dropdown-toggle.show::after {
+  transform: rotate(-180deg);
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+.NavBar :global .dropdown-menu {
+  background-color: var(--background-color-black);
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px 0px #2e29330a, 0px 4px 24px 0px #2e293314,
+    0px 8px 24px 0px #473f4f29;
+  min-width: 300px;
+  top: calc(100% + 10px);
+  transform: translateX(-30%);
+  padding: 16px;
+}
+
+.NavBar :global .dropdown-menu:before {
+  border-color: #0000 #0000 #000 #0000;
+  border-style: solid;
+  border-width: 0 14px 17.3px;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%) translateY(calc(-100% + 2px));
+  width: 0;
+}
+.NavBar :global .dropdown-item {
+  font-size: 20px;
+  color: var(--text-color-white);
+  padding: 8px 15px;
+}
+.NavBar :global .dropdown-item:hover {
+  border-radius: 64px;
+  background-color: var(--text-color-light-black);
+}
+.YellowBtn {
+  border-radius: 64px;
+  border: 2px solid var(--text-color-yellow);
+  background: var(--text-color-yellow);
+  color: var(--text-color-light-black);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0px 16px;
+  height: 40px;
+  transition: all 0.25s ease-out;
+}
+.YellowBtn:hover {
+  background-color: transparent;
+  border: 2px solid var(--text-color-yellow);
+  color: var(--text-color-yellow);
+  transition: all 0.25s ease-out;
+}
+.NavBar :global .navbar-toggler:focus {
+  box-shadow: none;
+}
+/* Main */
+/* Banner */
+.BannerDiv {
+  width: 100%;
+}
+.BannerImg {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -126px;
+  top: -126px;
+  max-height: 90vh;
+  min-height: 90vh;
+  grid-area: 1/1;
+  z-index: -1;
+}
+.BannerImg img {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.BannerColor {
+  background: linear-gradient(90deg, #1a1a1a, #1a1a1a, #1a1a1a25, #1a1a1a00);
+  grid-area: 1/1;
+  position: relative;
+  display: grid;
+  top: -126px;
+  margin-bottom: -126px;
+  height: 90vh;
+  z-index: -1;
+}
+.BannerContent {
+  grid-area: 1/1;
+  position: relative;
+  place-items: center;
+  display: grid;
+}
+.BannerInner {
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  display: flex;
+}
+.BannerDiv h1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 58px;
+  color: var(--text-color-white);
+  font-family: sans-serif;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.BannerDiv p {
+  font-size: 24px;
+  color: var(--text-color-white);
+  margin-bottom: 30px;
+}
+.TextBtn {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 16px;
+  height: 40px;
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+.TextBtn:hover {
+  background-color: var(--background-color-light-black);
+  border-radius: 64px;
+  color: var(--text-color-yellow);
+}
+.CurrentPara,
+.CurrentPara a {
+  font-size: 20px;
+  color: var(--text-color-white);
+  text-align: center;
+  position: relative;
+}
+/* About */
+.WorkBg {
+  padding: 50px 0px;
+}
+.WorkBg .WorkDiv {
+  background: var(--background-color-light-black);
+  border-radius: 24px;
+  padding: 50px 25px;
+}
+.WorkBg .WorkDiv h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+  margin-bottom: 20px;
+}
+.WorkBg .WorkDiv p {
+  font-size: 24px;
+  color: var(--text-color-white);
+}
+.WorkBg .WorkDiv p span {
+  font-weight: 700;
+}
+.WorkBg .WorkDiv .WorkImg {
+  text-align: center;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.BtnWhite {
+  border-radius: 64px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color-dark-black);
+  background-color: var(--background-color-white);
+  border: 2px solid #fff;
+  height: 40px;
+  padding: 0px 16px;
+}
+.BtnWhite:hover {
+  background-color: transparent;
+  color: var(--text-color-white);
+  border: 2px solid #fff;
+}
+.WidthFit {
+  width: fit-content;
+}
+/* Innovative Teams */
+.SameHead {
+  font-size: 42px;
+  font-weight: 600;
+  font-family: sans-serif;
+  color: var(--text-color-white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Team .Box {
+  background: linear-gradient(133deg, #fdb25d, #4436ca);
+  margin-bottom: 40px;
+  border-radius: 24px;
+  padding: 32px;
+}
+.Team .Box .BoxImg {
+  display: inline-block;
+  width: 50px;
+}
+.Team .Box .Content {
+  display: inline-block;
+  width: calc(100% - 60px);
+  vertical-align: top;
+  padding-left: 20px;
+}
+.Team .Box .Content p {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color-white);
+}
+.Team .Box .Content h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color-white);
+}
+/* Secure Network */
+.Secure {
+  padding: 50px 0px;
+}
+.Secure .Box {
+  text-align: center;
+}
+.Secure .Box h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color-white);
+  margin-bottom: 20px;
+}
+.Secure .Box p {
+  font-size: 20px;
+  color: var(--text-color-white);
+}
+/* Pricing */
+.Price {
+  padding: 50px 0px;
+}
+.Price .SameHead {
+  margin-bottom: 10px;
+}
+.PricePara {
+  color: var(--text-color-white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Price .PriceBox {
+  background-color: var(--background-color-light-black);
+  border-radius: 24px;
+  padding: 32px 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Price .PriceBox h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color-white);
+  margin: 20px 0px 10px;
+}
+.Price .PriceBox p {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--text-color-white);
+  margin-bottom: 20px;
+}
+.Price .PriceBox ul {
+  padding: 0px;
+}
+.Price .PriceBox ul li {
+  display: block;
+  list-style-type: none;
+  color: var(--text-color-white);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.BlueBtn {
+  background-color: var(--background-color-blue);
+  border: 2px solid var(--background-color-blue);
+  border-radius: 64px;
+  color: var(--text-color-white);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 2px 16px;
+  height: 40px;
+}
+.BlueBtn:hover {
+  background-color: transparent;
+  border: 2px solid var(--background-color-blue);
+}
+
+/* ZeroTier */
+.ZeroTierService .ZeroTierBox {
+  background-color: var(--background-color-blue);
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 50px;
+}
+.ZeroTierService .ZeroTierBox img {
+  width: 100%;
+  height: auto;
+}
+.ZeroTierService .ZeroTierBox h3 {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--text-color-white);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+.ZeroTierService .ZeroTierBox p {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-color-white);
+}
+.BorderYellow {
+  border: 2px solid var(--background-color-yellow);
+  background-color: transparent;
+  color: var(--text-color-yellow);
+  border-radius: 64px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.BorderYellow:hover {
+  border: 2px solid var(--background-color-yellow);
+  background-color: var(--background-color-yellow);
+  color: var(--text-color-light-black);
+}
+/* Community Edition */
+.Community .CommunityBox {
+  background-color: var(--background-color-light-black);
+  border-radius: 24px;
+  padding: 32px;
+}
+.Community .CommunityBox h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--text-color-white);
+}
+.Community .CommunityBox p {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-color-white);
+}
+.BorderBtnWhite {
+  border-radius: 64px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--text-color-white);
+  border: 2px solid #fff;
+  height: 40px;
+  padding: 0px 16px;
+}
+.BorderBtnWhite:hover {
+  background-color: var(--background-color-white);
+  color: var(--text-color-dark-black);
+  border: 2px solid #fff;
+}
+.ReadText {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+.ReadText:hover {
+  color: var(--text-color-yellow);
+}
+/* Newsletter */
+.Newsletter {
+  padding: 50px 0px;
+}
+.Newsletter .NewsletterBox {
+  background-color: var(--background-color-black);
+  border-radius: 24px;
+  padding: 32px;
+}
+.Newsletter .NewsletterBox h3 {
+  color: var(--text-color-white);
+  font-size: 24px;
+  font-weight: 500;
+}
+.Newsletter .NewsletterBox p {
+  color: var(--text-color-white);
+  font-size: 18px;
+}
+.Newsletter .NewsletterBox input {
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 16px;
+  height: 50px;
+  border: none;
+}
+.Newsletter .NewsletterBox input:focus {
+  box-shadow: 0 0 20px #fdb25d;
+}
+.Newsletter .NewsletterBox button {
+  background-color: var(--background-color-yellow);
+  border: 2px solid var(--background-color-yellow);
+  border-radius: 64px;
+  height: 40px;
+  padding: 0px 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color-dark-black);
+}
+/* Footer */
+.Footer {
+  padding-top: 32px;
+}
+.Footer p {
+  font-size: 18px;
+  color: var(--text-color-white);
+  margin-bottom: 8px;
+}
+.Footer h4 {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  margin-bottom: 15px;
+  color: var(--text-color-white);
+}
+.Footer ul li {
+  display: block;
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.Footer ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+.Footer ul li a:hover {
+  color: var(--text-color-yellow);
+}
+.FooterBottom {
+  padding: 20px 0px;
+}
+.TermList li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 20px;
+}
+.TermList li a {
+  font-size: 18px;
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+.TermList li a:hover {
+  color: var(--text-color-yellow);
+}
+.FooterBottom {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--text-color-white);
+}
+.SocialList li {
+  display: inline-block;
+  list-style-type: none;
+}
+.SocialList li a {
+  color: var(--text-color-white);
+  margin-right: 25px;
+}
+.SocialList li a:hover {
+  color: var(--text-color-blue);
+}
+
+@media screen and (min-width: 1440px) {
+  .BannerDetail {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 990px) {
+  .BannerDetail {
+    width: 50% !important;
+  }
+}
+@media screen and (min-width: 40em) {
+  .BannerDetail {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .CurrentPara {
+    margin-top: 100px !important;
+  }
+  .BannerImg {
+    top: -260px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .CurrentPara {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .NavBar :global .navbar-nav {
+    margin-left: 138px !important;
+  }
+}
+@media screen and (min-width: 991px) {
+  .ContainerPadding {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 991px) {
+  .ContainerPadding {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .Footer h4,
+  .Footer ul li a {
+    font-size: 16px;
+  }
+  .BannerDiv h1 {
+    font-size: 4.5vw;
+  }
+  .NavBar {
+    padding-top: 20px;
+  }
+  .WorkBg .WorkDiv .WorkImg img {
+    width: 100%;
+    height: auto;
+  }
+  .SameHead {
+    font-size: 4.5vw;
+  }
+  .ZeroTierService .ZeroTierBox {
+    padding: 64px 32px;
+  }
+  .NavBar .ContainerPadding {
+    justify-content: flex-start;
+  }
+  .NavBar :global .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("/toggle.png");
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-right: -3px;
+  }
+  .NavBar :global .navbar-toggler .navbar-toggler-icon {
+    background-image: url("/cross.png");
+    width: 20px;
+    height: 20px;
+    background-size: auto;
+    margin-right: -3px;
+  }
+  .NavBar :global .navbar-collapse {
+    background-color: #000;
+    height: 100%;
+    padding-top: 32px;
+    position: fixed;
+    width: 100vw;
+    z-index: 4;
+    top: 80px;
+    left: 0;
+  }
+  .NavBar :global .navbar-nav {
+    background-color: #000;
+    height: 100%;
+    padding: 0px 20px;
+    height: 100vh;
+  }
+  .NavBar :global .dropdown-menu {
+    background-color: transparent;
+    border-radius: 24px;
+    box-shadow: none;
+    min-width: 300px;
+    padding: 16px 20px;
+    transform: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1100px) {
+  .BannerDiv h1 {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .BannerDiv h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .BannerDiv p {
+    font-size: 18px;
+  }
+  .TextBtn,
+  .YellowBtn {
+    font-size: 16px;
+  }
+  .CurrentPara {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .CurrentPara a {
+    font-size: 16px;
+  }
+  .WorkBg .WorkDiv .WorkImg {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .WorkBg .WorkDiv .WorkImg img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .WorkBg .WorkDiv h2 {
+    font-size: 20px;
+  }
+  .WorkBg .WorkDiv p {
+    font-size: 18px;
+  }
+  .BtnWhite {
+    font-size: 16px;
+    margin: 0px auto;
+  }
+  .SameHead {
+    font-size: 22px;
+  }
+  .Team .Box .BoxImg {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .Team .Box .Content {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .Team .Box .Content p {
+    font-size: 18px;
+  }
+  .Team .Box .Content h4 {
+    font-size: 16px;
+    letter-spacing: 0.08em;
+  }
+  .Secure {
+    padding: 30px 0px;
+  }
+  .Secure .Box {
+    padding: 0px 20px;
+    margin-bottom: 30px;
+  }
+  .Secure .Box h3 {
+    font-size: 20px;
+  }
+  .Secure .Box p {
+    font-size: 16px;
+  }
+  .Price .PriceBox h3 {
+    font-size: 20px;
+  }
+  .Price .PriceBox p {
+    font-size: 16px;
+    padding: 0px 15px;
+    margin-bottom: 20px;
+  }
+  .ZeroTierService .ZeroTierBox {
+    padding: 80px 32px 40px;
+  }
+  .ZeroTierService .ZeroTierBox h3 {
+    font-size: 22px;
+  }
+  .ZeroTierService .ZeroTierBox p {
+    font-size: 18px;
+  }
+  .BorderYellow {
+    margin: auto;
+  }
+  .ZeroTierService .ZeroTierBox img {
+    height: auto !important;
+    width: 100%;
+    margin-top: 70px;
+  }
+  .Community .CommunityBox h3 {
+    font-size: 20px;
+  }
+  .Community .CommunityBox p {
+    font-size: 16px;
+  }
+  .BorderBtnWhite {
+    font-size: 16px;
+  }
+  .ReadText {
+    font-size: 16px;
+  }
+  .Newsletter .NewsletterBox h3 {
+    font-size: 18px;
+  }
+  .Newsletter .NewsletterBox p {
+    font-size: 16px;
+  }
+  .TermList li:first-child {
+    margin-left: 0px;
+  }
+  .Footer h4 {
+    margin-top: 20px;
+  }
+}

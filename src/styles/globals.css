@@ -1,0 +1,38 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-out;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  background: #1a1a1a !important;
+  font-family: sans-serif !important;
+}
+:root {
+  --text-color-white: #ffffff;
+  --text-color-yellow: #ffb441;
+  --text-color-light-black: #1a1a1a;
+  --background-color-light-black: #262626;
+  --background-color-black: #000;
+  --text-color-dark-black: #262626;
+  --background-color-white: #ffffff;
+  --background-color-blue: #4436ca;
+  --background-color-yellow: #ffb441;
+  --text-color-blue: #4436ca;
+}
+.open_burger {
+  overflow: hidden;
+  height: 100vh;
+}
+.NavBarBg {
+  background-color: var(--background-color-black) !important;
+}
